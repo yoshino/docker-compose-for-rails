@@ -1,4 +1,5 @@
 # README
+If you need Rails API mode, you can use [this](https://github.com/yoshino/docker-compose-for-rails-and-next).
 
 ## Setup
 ```

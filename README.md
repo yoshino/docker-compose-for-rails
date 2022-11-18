@@ -1,24 +1,25 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Setup
+```
+docker compose build
+docker compose run app rails db:create
+docker compose run app rails db:migrate
+```
 
-Things you may want to cover:
+## Start at Local
+```
+docker compose up
+```
 
-* Ruby version
+## Lint
 
-* System dependencies
+```
+docker compose run app rubocop
+```
 
-* Configuration
+## Test
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+docker compose run app rspec
+```
